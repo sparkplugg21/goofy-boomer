@@ -1,0 +1,39 @@
+import time 
+from pygame import mixer
+def main():
+ 	 
+	print("My name is computron.")
+	time.sleep(1)
+	Name = input ("What is your Name?")
+	print ("Hi, " + Name +  ", its nice to meet you.")
+	time.sleep(2)
+	print ("The first letter of your name is " + Name[0] + ".")
+	time.sleep(1)
+	int1 = raw_input ("how old are you?")
+	int1 = int(int1)
+	compAge = (20)
+	compAge = int(compAge)
+	ageDiff = compAge - int1 
+	AgeDiff2 = int1 - compAge 
+	time.sleep(1)
+	if  int1 < compAge: 
+		print "I am "  , ageDiff  ,"years older than you. "
+	else: print "you are " , AgeDiff2 , "years older than me."
+	time.sleep(3)
+	print("I challenge you to name  a video game that starts with m")
+	time.sleep(2)
+	game = input(" name a video game title that starts with m")
+	rightGame = "m"
+	if game[0] == rightGame:
+		print ("you got it right!")
+
+	else: 
+		print ("wrong. no second guesses.")
+
+	time.sleep(2)
+	print("it have been a pleasure.")
+	time.sleep(1)
+	print("goodbye.")
+	
+
+main()
